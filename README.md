@@ -39,21 +39,16 @@ Registeration Number : 212222040181
 ```
 package com.example.ex4;
 import android.support.v7.app.AppCompatActivity;
-
 import android.content.Intent;
 import android.net.Uri;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.Button;
-
-
 public class MainActivity extends AppCompatActivity {
-
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
-
         Button mbutton = findViewById(R.id.smsButton);
         mbutton.setOnClickListener(new View.OnClickListener() {
             @Override
@@ -75,7 +70,6 @@ public class MainActivity extends AppCompatActivity {
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     tools:context=".MainActivity">
-
     <Button
         android:id="@+id/smsButton"
         android:layout_width="wrap_content"
@@ -84,7 +78,6 @@ public class MainActivity extends AppCompatActivity {
     android:text="Send SMS"
     android:layout_centerHorizontal="true"
     android:layout_centerVertical="true"/>
-
 </RelativeLayout>
 ```
 
